@@ -11,7 +11,6 @@ tail_fac(N, Tot) -> tail_fac(N-1, N*Tot).
 len([]) -> 0;
 len([_|T]) -> 1 + len(T).
 
-tail_len([]) -> 0;
-tail_len(List) -> tail_len(List, 0).
+tail_len(L) -> tail_len(L, 0).
 tail_len([], Len) -> Len;
 tail_len([_|T], Len) -> tail_len(T, Len + 1).
