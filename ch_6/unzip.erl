@@ -1,7 +1,7 @@
 -module(unzip).
 -export([unzip/1]).
 
-%%This is like a zillion iterations/reversals too many, but finally.
+%% This is like a zillion iterations/reversals too many, but finally.
 acc_from_list([H|_]) ->
   [[] || _ <- tuple_to_list(H)].
 

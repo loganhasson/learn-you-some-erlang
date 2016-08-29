@@ -14,7 +14,7 @@ heh_fine() ->
 
 oh_god(N) ->
   if N =:= 2 -> might_succeed;
-  true -> always_does %% This is Erlang's if's 'else!'
+  true -> always_does % This is Erlang's if's 'else!'
   end.
 
 %% Note that this one would be better as a pattern match in function heads!
